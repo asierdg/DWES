@@ -1,3 +1,34 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Alumnado</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+<body>
+    <h2>Registro de Alumnado</h2>
+    <form method="POST" action="insertar.php">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required><br><br>
 
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos" required><br><br>
+
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" required><br><br>
+
+        <label>Curso:</label><br>
+        <input type="radio" name="curso" value="1º ESO" required> 1º ESO<br>
+        <input type="radio" name="curso" value="2º ESO"> 2º ESO<br>
+        <input type="radio" name="curso" value="3º ESO"> 3º ESO<br>
+        <input type="radio" name="curso" value="4º ESO"> 4º ESO<br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Contraseña:</label>
+        <input type="password" name="contrasena" required><br><br>
+
+        <input type="submit" value="Matricular">
+    </form>
+</body>
 </html>
