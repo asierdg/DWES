@@ -40,5 +40,17 @@ class F3 extends Monoplaza{
             return false;
         }
     }
+
+
+    public function subirCategoria($superlicencia) {
+        return new F2(
+            $this->nombre,
+            $this->nacionalidad,
+            $this->numero,
+            $this->escuderia,
+            $this->puntos,
+            $superlicencia
+        );
+    }
 }
 ?>  

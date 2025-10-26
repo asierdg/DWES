@@ -23,7 +23,7 @@ class F4 extends Monoplaza{
         if ($vueltaRapida == true){
             echo "El piloto ha realizado una vuelta rapida";
         }
-        
+
         $sumarPuntos = $sumarPuntos + $tablaPuntos[$posicion];
         $this->puntos = $this->puntos + $sumarPuntos;
 
@@ -39,6 +39,18 @@ class F4 extends Monoplaza{
         } else {
             return false;
         }
+    }
+
+
+    public function subirCategoria($academia) {
+        return new F3(
+            $this->nombre,
+            $this->nacionalidad,
+            $this->numero,
+            $this->escuderia,
+            $this->puntos,
+            $academia
+        );
     }
 }
 ?>

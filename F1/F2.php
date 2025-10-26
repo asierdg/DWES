@@ -45,5 +45,20 @@ class F2 extends Monoplaza{
         }
     }
 
+
+    public function subirCategoria($patrocinador) {
+        if ($this->superlicencia == false){
+            echo "No tiene puntos suficientes para subir a F1";
+        }else{
+            return new F1(
+                $this->nombre,
+                $this->nacionalidad,
+                $this->numero,
+                $this->escuderia,
+                $this->puntos,
+                $patrocinador
+            );
+        }
+    }
 }
 ?>
