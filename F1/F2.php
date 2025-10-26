@@ -48,7 +48,7 @@ class F2 extends Monoplaza{
 
     public function subirCategoria($patrocinador) {
         if ($this->superlicencia == false){
-            echo "No tiene puntos suficientes para subir a F1";
+            echo "El piloto no tiene puntos suficientes de superlicencia para subir a F1";
         }else{
             return new F1(
                 $this->nombre,
