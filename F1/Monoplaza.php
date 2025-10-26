@@ -1,4 +1,4 @@
-<?
+<?php
 class Monoplaza{
     protected $nombre;
     protected $nacionalidad;
@@ -6,13 +6,12 @@ class Monoplaza{
     protected $escuderia;
     protected $puntos;
 
-
     public function __construct($pNombre, $pNacionalidad, $pNumero, $pEscuderia, $pPuntos) {
-            $this->nombre = $pNombre;
-            $this->nacionalidad = $pNacionalidad;
-            $this->numero = $pNumero;
-            $this->escuderia = $pEscuderia;
-            $this->puntos = $pPuntos;
+        $this->nombre = $pNombre;
+        $this->nacionalidad = $pNacionalidad;
+        $this->numero = $pNumero;
+        $this->escuderia = $pEscuderia;
+        $this->puntos = $pPuntos;
     }
 
     public function getNombre(){
@@ -50,17 +49,5 @@ class Monoplaza{
         $this->puntos = $sPuntos; 
     }
 
-
-    public function otorgarPuntos(){    
-        return 
-    }
-
-    public function posicionValida(){    
-        return 
-    }
-
-    public function subirCategoria(){    
-        return
-    }
 }
 ?>
