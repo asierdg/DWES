@@ -1,0 +1,6 @@
+¿Cómo llamar una API metodo POST PHP?
+
+Acabo de realizar una llamada a una API sobre F1 y creo que puedo ayudarte con la API de EnviaYa.
+Primero coges lo que el usuario pone en el formulario, el número de guía y la paquetería, y lo mandas a la API desde PHP con cURL, junto con tu clave. 
+La API te devuelve todo en JSON, y ahí ya vas sacando lo que te interesa, como si el paquete está entregado o cuándo llegará. 
+Luego solo tienes que enseñarle eso al usuario en la pantalla y listo, así puede ver el seguimiento.
